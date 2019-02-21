@@ -22,15 +22,15 @@ class DosesController < ApplicationController
   end
 
   def destroy
-    @dose = Dose.find(params[:dose_id])
+    @dose = Dose.find(params[:id])
     @dose.destroy
-    redirect_to cocktail_path(@cocktail)
+    redirect_to cocktail_path(@dose.cocktail)
   end
 
   private
 # we require the 3 params that are sent from the form , in order to save them to @restaurant in create.
  def dose_params
     params.require(:dose).permit(:description, :ingredient_id)
-  end
+end
 
 end
