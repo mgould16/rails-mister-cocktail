@@ -1,0 +1,8 @@
+Understanding our model.
+1/ Draw the schema
+We have 3 models, where they are joined by the doses
+so we have to create (in drawing the schema) an ingredient_id and cocktail_id, we join these
+foreign keys from the cocktail & ingredient tables to the doses table.
+2/ We create our models. We create the ingredient and cocktail model first, then we create
+the doses model, with 2 different references. cocktail:references and ingredient:references.
+3/ We db:migrate and then check our schema to see it is working.

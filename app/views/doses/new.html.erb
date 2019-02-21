@@ -1,0 +1,10 @@
+<!--
+Remember we must add each parameter required  as an input for our form.
+ -->
+<h1>Doses#new</h1>
+<p>Find me in app/views/reviews/new.html.erb</p>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit "add a description", class: "btn btn-primary" %>
+<% end %>
