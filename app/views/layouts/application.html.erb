@@ -13,7 +13,15 @@
   </head>
 
   <body>
-    <%= yield %>
+
+
+
+    <div class = "main container">
+      <%= yield %>
+    </div>
+
+
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->

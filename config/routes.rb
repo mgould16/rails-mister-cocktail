@@ -9,6 +9,5 @@ end
 resources :ingredients do
     resources :doses, only: [:new, :create]
   end
-
 resources :doses, only: [:destroy]
 end

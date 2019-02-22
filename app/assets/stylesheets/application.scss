@@ -11,3 +11,19 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import "bootstrap/scss/bootstrap"; // picks it up in node_modules!
+
+$pink: #460a1c;
+$spacer: 8px;
+
+body {
+  background: $pink; // Using this variable
+}
+
+.main-container {
+  display: flex;
+  grid-gap: 16px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
