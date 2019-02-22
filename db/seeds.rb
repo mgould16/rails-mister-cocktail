@@ -10,7 +10,7 @@
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
 
-
+require "faker"
 
 puts 'Cleaning database...'
 Cocktail.destroy_all
