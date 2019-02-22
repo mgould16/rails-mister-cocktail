@@ -2,10 +2,14 @@
 
 <h2> <%= @cocktail.name %></h2>
 
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+<!-- cockta -->
 <% @cocktail.doses.each do |dose| %>
+
   <p>Ingredient:</p>
   <p><%= dose.description %></p>
 <%= link_to "Delete Ingredient?", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+
 <% end %>
 
 <p><%= link_to "add new Dose?", new_cocktail_dose_path(@cocktail) %></p>

@@ -2,11 +2,15 @@
     <h1>Mark's Salvation Cocktails</h1>
     <h2>Delivering a Mark Gould Guarantee of Good Flavor!</h2>
 
+<div class = "logo">
+  <h1>welcome</h1>
+<%= cl_image_tag("sample",
+      width: 400, height: 300, crop: :fill)  %>
+</div>
 
 <div class = "cards">
   <% @cocktails.each do |cocktail| %>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)
- ">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%= cl_image_path cocktail.pic_url %>')">
   <!-- clickable link, go to cocktail id -->
     <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
   </div>
@@ -15,4 +19,5 @@
   <!-- clickable link, go to new cocktail path -->
     <p><%= link_to "new Cocktail", new_cocktail_path %></p>
 </div>
+
 
