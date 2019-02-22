@@ -18,7 +18,8 @@
 $spacer: 8px;
 
 body {
-  background: black; // Using this variable
+  background: url("bar.jpeg");
+  color: white; // Using this variable
 }
 
 .main-container {
@@ -27,3 +28,4 @@ body {
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
