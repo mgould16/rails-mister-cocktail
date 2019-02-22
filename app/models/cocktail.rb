@@ -12,4 +12,11 @@ class Cocktail < ApplicationRecord
     end
   end
 
+  def pic_tag()
+    if self.photo_url
+      return self.photo
+    else
+      return "sample"
+    end
+  end
 end

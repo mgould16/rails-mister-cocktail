@@ -2,7 +2,7 @@
 
 <h2> <%= @cocktail.name %></h2>
 
-  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+  <%= cl_image_tag @cocktail.pic_tag, height: 300, width: 400, crop: :fill %>
 <!-- cockta -->
 <% @cocktail.doses.each do |dose| %>
 

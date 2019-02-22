@@ -24,3 +24,6 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 Dose.create(description: "ice")
 Dose.create(description: "mint leaves")
+
+
+# 30.times { Cocktail.create(name: Faker::Dessert.flavor) }
