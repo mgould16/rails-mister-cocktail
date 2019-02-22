@@ -2,8 +2,10 @@
     <h1>Mark's Salvation Cocktails</h1>
     <h2>Delivering a Mark Gould Guarantee of Good Flavor!</h2>
 
-
-<div class = "cards">
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+    <div class = "cards">
   <% @cocktails.each do |cocktail| %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%= cl_image_path cocktail.pic_url %>')">
   <!-- clickable link, go to cocktail id -->
@@ -12,7 +14,9 @@
 
   <% end %>
   <!-- clickable link, go to new cocktail path -->
-    <p><%= link_to "new Cocktail", new_cocktail_path %></p>
+
+</div>
+<p><%= link_to "Add a new Cocktail?", new_cocktail_path %></p>
 </div>
 
 
