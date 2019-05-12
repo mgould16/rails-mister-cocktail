@@ -3,7 +3,7 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div><%= @cocktail.errors.full_messages %></div>
-
+  <% raise %>
   <div class="form-inputs">
     <%= f.input :name %>
     <%= f.input :photo %>

@@ -16,7 +16,7 @@ class Cocktail < ApplicationRecord
     if self.photo_url
       return self.photo
     else
-      return "sample"
+      return "sf1"
     end
   end
 end
